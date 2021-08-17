@@ -50,5 +50,7 @@ at kotakoda, u can use curl directly
 
 ## Reference
 https://kubernetes.io/docs/tutorials/hello-minikube/
+
 https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+
 https://www.katacoda.com/courses/kubernetes/playground
