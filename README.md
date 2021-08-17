@@ -1,6 +1,15 @@
 # k8s_practise
 k8s_practise
 
+This is example on minikube
+```bash
+    minikube start
+```
+
+To view minikube on web, run
+```bash
+    minikube dashboard
+```
 
 Deployment yaml file can be generated and create deployment in declaritive way:
 ```bash
@@ -27,6 +36,19 @@ To check the service, ip can be get from the info below:
 ```
 
 To test the application
+
+run the below command to tunnel for the service web
+```bash
+    minikube service web
+```
+
+at kotakoda, u can use curl directly
 ```bash
    curl http://xx.xx.xxx.xx
 ```
+
+
+## Reference
+https://kubernetes.io/docs/tutorials/hello-minikube/
+https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+https://www.katacoda.com/courses/kubernetes/playground
