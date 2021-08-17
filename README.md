@@ -1,6 +1,8 @@
 # k8s_practise
 k8s_practise
 
+
+### minikube usage
 This is example on minikube
 ```bash
     minikube start
@@ -10,6 +12,10 @@ To view minikube on web, run
 ```bash
     minikube dashboard
 ```
+
+
+### Deployment and Service
+-- Skip the minikube part if using katokoda playground
 
 Deployment yaml file can be generated and create deployment in declaritive way:
 ```bash
