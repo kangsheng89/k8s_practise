@@ -17,8 +17,21 @@ spec:
       labels:
         app: web
     spec:
+      volumes:
+      - name: volv
+        persistentVolumeClaim:
+          claimName: local-path-pvc
       containers:
       - image: nginxdemos/hello
         name: hello
         resources: {}
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 3
+        volumeMounts:
+        - name: volv
+          mountPath: /data
 status: {}
